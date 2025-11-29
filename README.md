@@ -28,7 +28,7 @@ Her yeni Üye:
 
 * TCP port **6666** üzerinden dış dünyadan text mesajı dinler
 * Her mesajı Protobuf formatına dönüştürür
-* Tüm diğer Üye’lara gRPC üzerinden gönderir
+* Tüm diğer üyelere gRPC üzerinden gönderir
 
 ### ✔ gRPC + Protobuf İçi Mesajlaşma
 
@@ -101,7 +101,7 @@ Bu komut:
 
 ## ▶️ Çalıştırma
 
-Her bir terminal yeni bir Üye demektir.
+Her bir terminal yeni bir üye demektir.
 
 ### **Terminal 1 – Lider Üye**
 
@@ -117,7 +117,7 @@ Leader listening for text on TCP 127.0.0.1:6666
 ...
 ```
 
-![Sistem Başlatma]([./Distributed System Start-start.png](https://github.com/ismailhakkituran/distributed-disk-register/blob/main/Distributed%20System%20Start-start.png))
+![Sistem Başlatma](https://github.com/ismailhakkituran/distributed-disk-register/blob/main/Distributed%20System%20Start-start.png)
 
 
 ### **Terminal 2, 3, 4… – Diğer Üyeler**
@@ -128,7 +128,7 @@ Her yeni terminal:
 mvn exec:java -Dexec.mainClass=com.example.family.NodeMain
 ```
 
-Üye’lar 5556, 5557, 5558… portlarını otomatik bulur
+Üyeler 5556, 5557, 5558… portlarını otomatik bulur
 ve aileye katılır.
 
 ---
@@ -136,7 +136,7 @@ ve aileye katılır.
 
 ## Mesaj Gönderme (TCP → Lider Üye)
 
-Lider Üye dış dünyadan gelen text’i 6666 portunda bekler.
+Lider Üye, dış dünyadan gelen text’i 6666 portunda bekler.
 
 Yeni bir terminal aç:
 
@@ -156,11 +156,11 @@ Mesaj yaz:
 Merhaba distributed world!
 ```
 
-![Mesajın dağıtılması](![Sistem Başlatma]([./Distributed System Start-start.png](https://github.com/ismailhakkituran/distributed-disk-register/blob/main/Distributed%20System%20Start-telnet.png)
+![Sistem Başlatma](https://github.com/ismailhakkituran/distributed-disk-register/blob/main/Distributed%20System%20Start-telnet.png)
 
 ###  Sonuç
 
-Bu mesaj protobuf mesajına çevrilip tüm Üyelere gider.
+Bu mesaj protobuf mesajına çevrilip tüm üyelere gider.
 
 ---
 
