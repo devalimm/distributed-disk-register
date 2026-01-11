@@ -1,0 +1,1 @@
+Bu bmesaj diskte kaydedilecek
