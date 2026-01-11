@@ -1,9 +1,13 @@
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\src\main\java\com\example\family\Command.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\src\main\java\com\example\family\FamilyServiceImpl.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\src\main\java\com\example\family\MessageRegistry.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\src\main\java\com\example\family\MessageStore.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\src\main\java\com\example\family\NodeMain.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\src\main\java\com\example\family\NodeRegistry.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\src\main\java\com\example\family\StorageServiceImpl.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\src\main\java\com\example\family\ToleranceConfig.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\grpc-java\family\FamilyServiceGrpc.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\grpc-java\family\StorageServiceGrpc.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\ChatMessage.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\ChatMessageOrBuilder.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\Empty.java
@@ -11,5 +15,11 @@ C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\gen
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\FamilyProto.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\FamilyView.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\FamilyViewOrBuilder.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\MessageId.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\MessageIdOrBuilder.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\NodeInfo.java
 C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\NodeInfoOrBuilder.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\StoredMessage.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\StoredMessageOrBuilder.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\StoreResult.java
+C:\dev\sistemdist\distributed-disk-register\distributed-disk-register\target\generated-sources\protobuf\java\family\StoreResultOrBuilder.java

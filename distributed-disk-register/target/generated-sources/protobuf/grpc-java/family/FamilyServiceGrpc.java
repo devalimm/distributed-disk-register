@@ -3,6 +3,9 @@ package family;
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
+ * <pre>
+ * Mevcut servis
+ * </pre>
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.67.1)",
@@ -153,6 +156,9 @@ public final class FamilyServiceGrpc {
   }
 
   /**
+   * <pre>
+   * Mevcut servis
+   * </pre>
    */
   public interface AsyncService {
 
@@ -180,6 +186,9 @@ public final class FamilyServiceGrpc {
 
   /**
    * Base class for the server implementation of the service FamilyService.
+   * <pre>
+   * Mevcut servis
+   * </pre>
    */
   public static abstract class FamilyServiceImplBase
       implements io.grpc.BindableService, AsyncService {
@@ -191,6 +200,9 @@ public final class FamilyServiceGrpc {
 
   /**
    * A stub to allow clients to do asynchronous rpc calls to service FamilyService.
+   * <pre>
+   * Mevcut servis
+   * </pre>
    */
   public static final class FamilyServiceStub
       extends io.grpc.stub.AbstractAsyncStub<FamilyServiceStub> {
@@ -232,6 +244,9 @@ public final class FamilyServiceGrpc {
 
   /**
    * A stub to allow clients to do synchronous rpc calls to service FamilyService.
+   * <pre>
+   * Mevcut servis
+   * </pre>
    */
   public static final class FamilyServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<FamilyServiceBlockingStub> {
@@ -270,6 +285,9 @@ public final class FamilyServiceGrpc {
 
   /**
    * A stub to allow clients to do ListenableFuture-style rpc calls to service FamilyService.
+   * <pre>
+   * Mevcut servis
+   * </pre>
    */
   public static final class FamilyServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<FamilyServiceFutureStub> {
