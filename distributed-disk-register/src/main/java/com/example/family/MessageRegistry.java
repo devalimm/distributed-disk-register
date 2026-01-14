@@ -39,7 +39,7 @@ public class MessageRegistry {
     * Tüm mesaj lokasyonlarını yazdırır (debug için).
     */
    public void printStatus() {
-      System.out.println("📊 Message Registry Status:");
+      System.out.println("Message Registry Status:");
       System.out.println("   Total messages tracked: " + messageLocations.size());
 
       // Her üyenin kaç mesaj tuttuğunu say

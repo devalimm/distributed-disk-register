@@ -207,6 +207,13 @@ Her üye 10 saniyede bir kendi ailesini ekrana basar.
 
 ---
 
+mvn exec:java -Dexec.mainClass=com.example.family.NodeMain
+
+### HaToKuSeClient
+mvn exec:java -Dexec.mainClass=com.example.family.HaToKuSeClient \
+  -Dexec.args="--durationMinutes=1 --printEach --setRatio=0.8"
+
+
 ##  Ödev / Bundan Sonra Yapılacaklar
 
 Öğrenciler:
@@ -233,3 +240,4 @@ MIT — Eğitim ve araştırma amaçlı serbestçe kullanılabilir.
 
 Pull request’e her zaman açığız!
 Yeni özellik önerileri için issue açabilirsiniz.
+

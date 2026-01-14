@@ -1,1 +1,0 @@
-bu da bir bir bir denemeee

@@ -172,11 +172,11 @@ public class NodeMain {
             messageRegistry.registerMessage(messageId, allStoredAt);
 
             writer.println("OK");
-            System.out.println("✅ SET successful: id=" + messageId +
+            System.out.println("SET successful: id=" + messageId +
                     ", replicated to " + successfulMembers.size() + " members");
         } else {
             writer.println("ERROR: Could not replicate to enough members");
-            System.out.println("❌ SET failed: id=" + messageId + ", replication failed");
+            System.out.println("SET failed: id=" + messageId + ", replication failed");
         }
     }
 
@@ -202,7 +202,7 @@ public class NodeMain {
      * Bir üyeye gRPC Store isteği gönder
      */
     private static boolean sendStoreToMember(NodeInfo member, int messageId, String text) {
-        ManagedChannel channel = null;
+        ManagedChannel channel = null; // gRPC channel
         try {
             channel = ManagedChannelBuilder
                     .forAddress(member.getHost(), member.getPort())
@@ -214,12 +214,12 @@ public class NodeMain {
             StoredMessage msg = StoredMessage.newBuilder()
                     .setId(messageId)
                     .setText(text)
-                    .build();
+                    .build(); // Protobuf mesaji olusturur
 
             StoreResult result = stub.store(msg);
 
             if (result.getSuccess()) {
-                System.out.printf("📤 Replicated id=%d to %s:%d%n",
+                System.out.printf("Replicated id=%d to %s:%d%n",
                         messageId, member.getHost(), member.getPort());
                 return true;
             } else {
@@ -250,7 +250,7 @@ public class NodeMain {
         String message = messageStore.get(messageId);
         if (message != null) {
             writer.println(message);
-            System.out.println("✅ GET successful (local): id=" + messageId);
+            System.out.println("GET successful (local): id=" + messageId);
             return;
         }
 
@@ -266,13 +266,13 @@ public class NodeMain {
             if (retrieved != null && !retrieved.isEmpty()) {
                 writer.println(retrieved);
                 System.out.println(
-                        "✅ GET successful (from " + member.getHost() + ":" + member.getPort() + "): id=" + messageId);
+                        "GET successful (from " + member.getHost() + ":" + member.getPort() + "): id=" + messageId);
                 return;
             }
         }
 
         writer.println("NOT_FOUND");
-        System.out.println("❌ GET failed: id=" + messageId + " not found");
+        System.out.println("GET failed: id=" + messageId + " not found");
     }
 
     /**
@@ -310,7 +310,7 @@ public class NodeMain {
         ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
         scheduler.scheduleAtFixedRate(() -> {
             System.out.println("--------------------------------------");
-            System.out.println("📊 Leader Status - " + LocalDateTime.now());
+            System.out.println("Leader Status - " + LocalDateTime.now());
             System.out.println("   Local messages: " + messageStore.size());
             messageRegistry.printStatus();
             System.out.println("--------------------------------------");

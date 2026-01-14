@@ -31,7 +31,7 @@ public class MessageStore {
       Path file = messagesDir.resolve(id + ".msg");
       try (BufferedWriter writer = Files.newBufferedWriter(file)) {
          writer.write(message);
-         System.out.println("📦 Stored to disk: " + file.getFileName());
+         System.out.println("Stored to disk: " + file.getFileName());
       } catch (IOException e) {
          System.err.println("Failed to write message " + id + ": " + e.getMessage());
       }
